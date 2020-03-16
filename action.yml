@@ -1,0 +1,21 @@
+name: "Notify on pull request"
+description: "Notifies the owner of the repository when someone submits a pull request to your specified branches"
+author: "Vipul Bhardwaj"
+branding:
+  icon: git-pull-request
+  color: green
+
+inputs:
+  mobile_no:
+    description: "your mobile number"
+    required: true
+  aws_key_id:
+    description: "your aws key id"
+    required: true
+  aws_key_access:
+    description: "your aws key access"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
