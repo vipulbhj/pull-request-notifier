@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Notify when someone creates a pull request on mentioned branches
         id: notify-on-pr
-        uses: ./
+        uses: vipulbhj/pull-request-notifier@v0.2.0
         with:
           mobile_no: ${{ secrets.MOBILE_NO }}
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
